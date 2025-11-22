@@ -6,15 +6,17 @@
 }
 
 body{
-    min-height: 100vh;
+    height: auto;
     background: radial-gradient(circle at top, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px;
+    overflow: hidden;
 }
 
 #wrapper{
+    height: 100%;
     width: 100%;
     max-width: 650px;
 }
@@ -101,10 +103,36 @@ header{
     opacity: 0.8;
 }
 
+#creditBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#credit{
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
 @media (max-width:600px){
     body{
         align-items: flex-start;
-        padding: 20px 12px;   
+        padding: 20px 12px;
+        overflow: auto;   
     }
 
     .wrapper{
@@ -122,5 +150,9 @@ header{
 
     #lead{
         font-size: 0.8rem;
+    }
+
+    #credit{
+        width: 70%;
     }
 }
