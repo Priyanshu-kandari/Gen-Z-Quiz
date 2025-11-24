@@ -24,7 +24,7 @@ form.addEventListener("submit",(e)=>{
 
     resultText.innerText = `you scored ${score}`
 
-    if(score==4){
+    if(score==5){
         resultTag.innerText = "Certified Gen Z Legend 🏆🔥"
     }else if(score>=3){
         resultTag.innerText = "Pretty updated ngl 😎"
